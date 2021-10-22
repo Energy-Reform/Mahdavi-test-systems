@@ -11,13 +11,19 @@ mp_data = open(file) do io
 	# This is because `PowerModels.export_matpower()` doesn't write it,
 	# whereas `InfrastructureModels.parse_matlab_string()` expects it...
 	data_lines = split(data_string, '\n')
+	last = length(data_lines)
 	for (k, line) in enumerate(data_lines)
 		# This below is just a dirty condition that works for the files in this project
 		# I don't guarantee that it will work for *any* .m file
 		if k > 1 && startswith(line, "%") && startswith(data_lines[k - 1], "%%")
 			data_lines[k] = "%column_names%" * line[2:end]
 		end
+		if startswith(line, "%% convert branch impedances")
+			last = k - 1
+			break
+		end
 	end
+	data_lines = data_lines[1:last]
 	data_string = join(data_lines, '\n')
 	matlab_data, func_name, colnames = IM.parse_matlab_string(data_string, extended=true)
 	# write CSVs
