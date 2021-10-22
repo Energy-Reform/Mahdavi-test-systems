@@ -7,16 +7,6 @@
             "Tool": [
                 {
                     "type": "path",
-                    "relative": false,
-                    "path": "/home/manuel/.spinetoolbox/plugins/SpineOpt/specifications/Tool/load_template.json"
-                },
-                {
-                    "type": "path",
-                    "relative": true,
-                    "path": ".spinetoolbox/specifications/Tool/reduce_model.json"
-                },
-                {
-                    "type": "path",
                     "relative": true,
                     "path": ".spinetoolbox/specifications/Tool/mp_to_csv.json"
                 },
@@ -297,14 +287,9 @@
         "matpower_case": {
             "type": "Data Connection",
             "description": "",
-            "x": -415.3186294671954,
-            "y": 53.29566590846457,
+            "x": -416.2663172427999,
+            "y": 39.08034927439655,
             "references": [
-                {
-                    "type": "path",
-                    "relative": true,
-                    "path": "data/case118.m"
-                },
                 {
                     "type": "path",
                     "relative": true,
@@ -340,8 +325,8 @@
         "matpower_to_csv": {
             "type": "Tool",
             "description": "",
-            "x": -181.03305713977298,
-            "y": -222.3637921219061,
+            "x": -181.98074491537747,
+            "y": -236.57910875597412,
             "specification": "mp_to_csv",
             "execute_in_work": false,
             "cmd_line_args": [
@@ -357,14 +342,14 @@
         "Combined view": {
             "type": "View",
             "description": "",
-            "x": 417.4952550184044,
-            "y": 89.40802431880294
+            "x": 416.5475672427999,
+            "y": 75.19270768473493
         },
         "datapkg_to_spine": {
             "type": "Importer",
             "description": "",
-            "x": -13.554447853380005,
-            "y": -230.32485033410344,
+            "x": -14.502135628984497,
+            "y": -244.54016696817146,
             "specification": "matpower_dp_to_spine_opt",
             "cancel_on_error": false,
             "file_selection": [
@@ -377,8 +362,8 @@
         "datapkg_to_spine 1": {
             "type": "Importer",
             "description": "",
-            "x": -7.87119539839388,
-            "y": -80.5697185412439,
+            "x": -8.818883173998373,
+            "y": -94.78503517531192,
             "specification": "matpower_dp_to_spine_opt",
             "cancel_on_error": false,
             "file_selection": [
@@ -391,8 +376,8 @@
         "matpower_to_csv 1": {
             "type": "Tool",
             "description": "",
-            "x": -172.8044455286917,
-            "y": -76.51094541290753,
+            "x": -173.7521333042962,
+            "y": -90.72626204697555,
             "specification": "mp_to_csv",
             "execute_in_work": false,
             "cmd_line_args": [
@@ -408,8 +393,8 @@
         "spine_data": {
             "type": "Data Store",
             "description": "",
-            "x": 189.09127427409297,
-            "y": -221.17710055400659,
+            "x": 188.14358649848847,
+            "y": -235.3924171880746,
             "url": {
                 "dialect": "sqlite",
                 "username": "",
@@ -427,8 +412,8 @@
         "spine_data 1": {
             "type": "Data Store",
             "description": "",
-            "x": 172.54780649157357,
-            "y": -86.15654270594167,
+            "x": 171.60011871596907,
+            "y": -100.37185934000969,
             "url": {
                 "dialect": "sqlite",
                 "username": "",
@@ -446,8 +431,8 @@
         "Load template 1": {
             "type": "Tool",
             "description": "",
-            "x": 93.42858009997249,
-            "y": -328.470485793023,
+            "x": 92.480892324368,
+            "y": -342.685802427091,
             "specification": "Load template without input",
             "execute_in_work": false,
             "cmd_line_args": [
@@ -476,8 +461,8 @@
         "matpower_to_csv 2": {
             "type": "Tool",
             "description": "",
-            "x": -175.04310694648086,
-            "y": 71.14677252260145,
+            "x": -175.99079472208535,
+            "y": 56.931455888533435,
             "specification": "mp_to_csv",
             "execute_in_work": false,
             "cmd_line_args": [
@@ -493,8 +478,8 @@
         "datapkg_to_spine 2": {
             "type": "Importer",
             "description": "",
-            "x": -18.09165832191686,
-            "y": 90.15976074460309,
+            "x": -19.039346097521353,
+            "y": 75.94444411053507,
             "specification": "matpower_dp_to_spine_opt",
             "cancel_on_error": false,
             "file_selection": [
@@ -507,8 +492,8 @@
         "spine_data 2": {
             "type": "Data Store",
             "description": "",
-            "x": 174.29760883051227,
-            "y": 79.53712968655626,
+            "x": 173.34992105490778,
+            "y": 65.32181305248824,
             "url": {
                 "dialect": "sqlite",
                 "username": "",
@@ -526,8 +511,8 @@
         "matpower_to_csv 3": {
             "type": "Tool",
             "description": "",
-            "x": -178.94330178887375,
-            "y": 216.9416447381074,
+            "x": -179.89098956447825,
+            "y": 202.7263281040394,
             "specification": "mp_to_csv",
             "execute_in_work": false,
             "cmd_line_args": [
@@ -543,8 +528,8 @@
         "datapkg_to_spine 3": {
             "type": "Importer",
             "description": "",
-            "x": -11.374165702788716,
-            "y": 239.7926390985824,
+            "x": -12.321853478393209,
+            "y": 225.5773224645144,
             "specification": "matpower_dp_to_spine_opt",
             "cancel_on_error": false,
             "file_selection": [
@@ -557,8 +542,8 @@
         "spine_data 3": {
             "type": "Data Store",
             "description": "",
-            "x": 159.75246626205137,
-            "y": 214.01100690478444,
+            "x": 158.80477848644688,
+            "y": 199.79569027071642,
             "url": {
                 "dialect": "sqlite",
                 "username": "",
@@ -576,8 +561,8 @@
         "datapkg_to_spine 4": {
             "type": "Importer",
             "description": "",
-            "x": -2.832391325548535,
-            "y": 361.401119061159,
+            "x": -3.780079101153028,
+            "y": 347.185802427091,
             "specification": "matpower_dp_to_spine_opt",
             "cancel_on_error": false,
             "file_selection": [
@@ -590,8 +575,8 @@
         "matpower_to_csv 4": {
             "type": "Tool",
             "description": "",
-            "x": -176.9964528567172,
-            "y": 349.89222299062976,
+            "x": -177.9441406323217,
+            "y": 335.67690635656174,
             "specification": "mp_to_csv",
             "execute_in_work": false,
             "cmd_line_args": [
@@ -607,8 +592,8 @@
         "spine_data 4": {
             "type": "Data Store",
             "description": "",
-            "x": 167.80963234775126,
-            "y": 352.86014362452863,
+            "x": 166.86194457214677,
+            "y": 338.6448269904606,
             "url": {
                 "dialect": "sqlite",
                 "username": "",
